@@ -13,7 +13,7 @@ class: text-center
 ---
 
 # RainForest Project Report 
-Badr ELKARFI – MSc Project Management
+Badr ELKARFI – MSc Cybersecurity manager
 
 <!-- 
 
@@ -61,10 +61,12 @@ backgroundSize: contain
 
 <!--
 
-The baseline plan has a critical path of 1 → 2 → 3 → 7 → 8 → 12.
-Because HRM is only 10% available, Operator Training doesn’t finish until Day 217 — making the 5-week pilot impossible.
-Worse, the total planned cost is €26,666, which already exceeds the €20,000 OPEX limit.
-So the plan was unrealistic from day one — not due to poor effort estimation, but due to ignoring resource availability on the critical path.”
+
+If any task on it is late, the whole project is late
+How long each task takes:
+Who waits for whom
+arliest start/finish pass:
+Pick the chain that finishes last: that’s the critical path.
 
 -->
 
@@ -104,9 +106,6 @@ schedule; critical path unchanged (1→2→3→7→8→12)
 -->
 
 ---
-
-
-
 
 
 # Budget compare
