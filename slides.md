@@ -13,7 +13,13 @@ class: text-center
 ---
 
 # RainForest Project Report 
-Your Name – MSc Project Management
+Badr ELKARFI – MSc Project Management
+
+<!-- 
+
+hello My name is badr elkarfi, and today I’ll present my analysis of the RainForest project — the Customer Order Management System for ACME Distribution. I’ll walk you through the original plan, what actually happened by Week 4, why the deviations occurred, and what we can do to get the project back on track 
+
+-->
 
 ---
 layout: center
@@ -21,11 +27,31 @@ layout: center
 
 # Introduction
 
+<!-- 
+
+Before diving into the numbers, I want to share five principles that guided my analysis.
+First, realistic planning — we must account for real-world constraints like HR availability and learning curves.
+Second, Earned Value Management — it’s the only way to objectively measure if we’re on track.
+Third, proactive risk management — because changes, like client feedback, are inevitable.
+Fourth, skill-based resourcing — a Skill Level 4 developer isn’t just ‘less experienced’ — they’re 20% less productive, and that impacts timelines.
+And finally, continuous client communication — because waiting until the end to show the product guarantees rework. 
+
+-->
+
 ---
 layout: image
 image: gantt.png
 backgroundSize: contain
 ---
+
+<!--
+
+Adjusted hours = Estimated hours × (5 / skill level)
+Capacity/week = 40h × availability.
+Duration (weeks) = Adjusted ÷ Capacity; 1w = 5d.
+“≈” means rounded up to whole days for planning.
+
+-->
 
 ---
 layout: image
@@ -33,26 +59,55 @@ image: critical_path.png
 backgroundSize: contain
 ---
 
+<!--
+
+The baseline plan has a critical path of 1 → 2 → 3 → 7 → 8 → 12.
+Because HRM is only 10% available, Operator Training doesn’t finish until Day 217 — making the 5-week pilot impossible.
+Worse, the total planned cost is €26,666, which already exceeds the €20,000 OPEX limit.
+So the plan was unrealistic from day one — not due to poor effort estimation, but due to ignoring resource availability on the critical path.”
+
+-->
+
 ---
 layout: image
 image: bac.png
 backgroundSize: contain
 ---
 
+<!--
+
+Convert effort to hours (if in days): 1 day = 8 h.
+Adjust for productivity (skill level) Adjusted hours = Estimated hours × (5 / skill level)
+Cost per task: Adjusted hours × hourly rate
+BAC = sum of all task costs
+
+-->
+
 ---
 
 # Timeline compare
 
-| ID | Task                   | Baseline by Day 20 | Actual at Week 4 | Variance vs Baseline | Comment |
-| -: | ---------------------- | ------------------ | ---------------- | -------------------- | ------- |
-|  1 | Solution Specification | Finished           | Finished         | On time              | —       |
-|  2 | Product Browser UI     | Finished           | Finished         | On time              | —       |
-|  3 | Customer Order UI      | Finished           | 80%              | ≈ 1 day late         | —       |
-|  4 | Customer Payment UI    | Finished           | Finished         | On time              | —       |
-|  5 | Admin UI               | Finished           | 40%              | ≈ 2–3 days late      | —       |
-| 13 | dBase Modifications    | Finished           | 25%              | ≈ 4–5 days late      | —       |
+| ID | Task                   | Baseline by Day 20 | Actual at Week 4 | Variance vs Baseline | 
+| -: | ---------------------- | ------------------ | ---------------- | -------------------- | 
+|  1 | Solution Specification | Finished           | Finished         | On time              | 
+|  2 | Product Browser UI     | Finished           | Finished         | On time              | 
+|  3 | Customer Order UI      | Finished           | 80%              | ≈ 1 day late         | 
+|  4 | Customer Payment UI    | Finished           | Finished         | On time              | 
+|  5 | Admin UI               | Finished           | 40%              | ≈ 2–3 days late      | 
+| 13 | dBase Modifications    | Finished           | 25%              | ≈ 4–5 days late      |
+
+
+<!--
+
+schedule; critical path unchanged (1→2→3→7→8→12)
+
+-->
 
 ---
+
+
+
+
 
 # Budget compare
 
@@ -64,8 +119,21 @@ backgroundSize: contain
 | **EV per task** `EV_task(t)` | Value of work actually finished on that task by day `t` | `EV_task(t) = BAC_task × %complete(t)` | Task 3: `1520 × 0.80 = €1,216`     |
 | **Total EV** `EV(t)`         | Value of all work finished by day `t`                   | `EV(t) = Σ EV_task(t)`                 | **EV(20) = €6,524**                |
 
+<!--
+
+earned ~58% of planned progress
+
+-->
+
+
 ---
 layout: center
 ---
 
 # Conclusion
+
+<!--
+
+and to conclude, The single most important thing I learned: Project success depends on adapting to real performance data  not sticking to an unrealistic plan
+
+-->
